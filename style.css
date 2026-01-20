@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/* Define a codificação do arquivo CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Importa a fonte personalizada usada nos títulos */
+@font-face {
+    font-family: 'idroid';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format('opentype');
+}
+
+/* Aplica box-sizing globalmente para facilitar o controle de layout */
+* {
+    box-sizing: border-box;
+}
+
+/* ===== HEADER ===== */
+header {
+    width: 100%;
+    min-height: 200px;
+    background-image: linear-gradient(to bottom, #32af68, rgba(5, 5, 5, 0.685));
+    color: white;
+    padding: 10px;
+}
+
+/* Título principal do header */
+h1#principal {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    background-color: transparent;
+}
+
+/* Subtítulo do header */
+header > h2 {
+    font-weight: lighter;
+    background-color: transparent;
+}
+
+/* Container do menu */
+header > nav {
+    padding: 10px 0px;
+    margin-top: 54px;
+}
+
+/* Links do menu */
+.menu > a {
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 16px;
+}
+
+/* Efeito hover nos links do menu */
+.menu > a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo específico para links dentro dos parágrafos dos artigos */
+body > main > article > p > a {
+    color: #1f7245;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Hover dos links do artigo */
+body > main > article > p > a:hover {
+    text-decoration: underline;
+}
+
+/* Ícone de link após os links do artigo */
+body > main > article > p > a::after {
+    content: '\1F517';
+}
+
+/* Estilo geral para links */
+a {
+    color: #1f7245;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hover nos links da seção curiosidade */
+.curiosidade > p > a:hover {
+    text-decoration: underline;
+}
+
+/* Ícone após link da curiosidade */
+.curiosidade > p > a::after {
+    content: '\1F517'
+}
+
+/* Fonte e alinhamento do header */
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Alinhamento do menu */
+header > nav {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/* Corpo da página */
+body {
+    margin: 0;
+    background-color: #84e1ad;
+}
+
+/* Container principal */
+main {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.582);
+}
+
+/* Título principal do conteúdo */
+main > h1 {
+    font-family: idroid, sans-serif;
+    color: #155531;
+    text-indent: 15px;
+}
+
+/* Subtítulos dos artigos */
+main > article > h2 {
+    font-family: idroid, sans-serif;
+    color: #155531;
+    text-indent: 15px;
+    background-image: linear-gradient(to right, #daf3e5, rgba(255, 255, 255, 0.767));
+}
+
+/* Estilo geral das imagens */
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+/* Imagem dentro do picture ocupa 100% */
+picture > img {
+    width: 100%;
+}
+
+/* Reset de margem e padding dos artigos */
+article {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container do vídeo */
+.youtube {
+    margin: 20px -20px;
+    padding: 25px;
+    background-color: #146437;
+}
+
+/* Iframe do vídeo */
+.youtube iframe {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+/* Título da seção curiosidade */
+.curiosidade > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #2ea764;
+    color: white;
+    margin: 0;
+}
+
+/* Parágrafos da curiosidade */
+.curiosidade > p {
+    padding: 10px;
+    background-color: #c5ebd6;
+    margin: 0;
+}
+
+/* Último parágrafo com borda arredondada */
+.curiosidade > .p3 {
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* Lista da curiosidade */
+.curiosidade > ul {
+    columns: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    list-style: none;
+    background-color: #c5ebd6;
+    margin: 0;
+    border-radius: 0px 0px 0px 0px;
+}
+
+/* Ícone antes dos itens da lista */
+ul > li::before {
+    content: '\2713';
+    margin-right: 0.5em;
+}
+
+/* Estilo geral dos parágrafos */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    text-indent: 25px;
+    font-size: 1.3em;
+}
+
+/* Destaque de palavras */
+span {
+    font-weight: bold;
+    color: #1f7245;
+}
+
+/* Rodapé */
+footer > p {
+    background-color: #134227;
+    color: white;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+
+/* Destaque dos spans no rodapé */
+footer p span {
+    font-weight: bold;
+    color: white;
+}
