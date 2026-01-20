@@ -28,6 +28,7 @@ h1#principal {
     font-family: "Bebas Neue", sans-serif;
     text-align: center;
     font-weight: 400;
+    font-size: 2em;
     font-style: normal;
     background-color: transparent;
 }
@@ -35,6 +36,8 @@ h1#principal {
 /* Subtítulo do header */
 header > h2 {
     font-weight: lighter;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: transparent;
 }
 
@@ -134,7 +137,7 @@ main > article > h2 {
     font-family: idroid, sans-serif;
     color: #155531;
     text-indent: 15px;
-    background-image: linear-gradient(to right, #daf3e5, rgba(255, 255, 255, 0.767));
+    background-image: linear-gradient(to right, #daf3e5, transparent);
 }
 
 /* Estilo geral das imagens */
